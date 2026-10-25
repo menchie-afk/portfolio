@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications & Awards | Menchie Villanueva</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --bg-soft: #121a2b;
+      --card: #101a2d;
+      --text: #edf3ff;
+      --muted: #a3b6d9;
+      --line: rgba(255,255,255,0.08);
+      --primary: #76e4ff;
+      --secondary: #8c7bff;
+      --accent: #ffb86a;
+      --shadow: 0 20px 50px rgba(12, 20, 38, 0.45);
+      --radius: 22px;
+      --max-width: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background:
+        linear-gradient(135deg, rgba(7, 12, 22, 0.75), rgba(25, 18, 37, 0.65)),
+        url('assets/bg.png') center center / cover no-repeat fixed,
+        radial-gradient(circle at top left, rgba(118,228,255,0.16), transparent 26%),
+        radial-gradient(circle at top right, rgba(140,123,255,0.18), transparent 26%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, p { margin-top: 0; }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .page-header {
+      padding: 72px 0 26px;
+    }
+
+    .top-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      margin-bottom: 0;
+      letter-spacing: -0.05em;
+      line-height: 1.04;
+    }
+
+    .intro {
+      color: var(--muted);
+      margin-top: 12px;
+      max-width: 700px;
+      font-size: 1.04rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding: 22px 0 80px;
+    }
+
+    .gallery-item {
+      background: rgba(16, 26, 45, 0.7);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      border-color: rgba(118, 228, 255, 0.35);
+    }
+
+    .gallery-item img {
+      display: block;
+      width: min(100%, 720px);
+      height: auto;
+      max-height: 760px;
+      object-fit: contain;
+      background: #0d1320;
+      border-radius: 14px;
+    }
+
+    /* Scroll animations (translate & fade) */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(18px) scale(0.98) translateX(0);
+      transition: opacity 1s cubic-bezier(.2,.9,.2,1), transform 1s cubic-bezier(.2,.9,.2,1);
+      will-change: opacity, transform;
+    }
+
+    .animate-on-scroll.in {
+      opacity: 1;
+      transform: translateY(0) scale(1) translateX(0);
+      transition-duration: 1.05s;
+    }
+
+    .translate-x {
+      transform: translateX(-26px);
+      opacity: 0;
+    }
+
+    .translate-x.in {
+      transform: translateX(0);
+      opacity: 1;
+      transition: transform 1.05s cubic-bezier(.2,.9,.2,1), opacity 1.05s ease;
+    }
+
+    .cert-label {
+      width: min(100%, 760px);
+      padding: 18px 14px 4px;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--text);
+      text-align: center;
+      font-weight: 500;
+    }
+
+    @media (max-width: 920px) {
+      .gallery-item {
+        padding: 14px;
+      }
+
+      .cert-label {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        background-attachment: scroll;
+      }
+
+      .container {
+        width: calc(100% - 24px);
+      }
+
+      .page-header {
+        padding: 42px 0 18px;
+      }
+
+      .gallery-grid {
+        gap: 16px;
+        padding: 14px 0 48px;
+      }
+
+      .gallery-item {
+        padding: 10px;
+        border-radius: 16px;
+      }
+
+      .gallery-item img {
+        max-height: 70svh;
+        border-radius: 10px;
+      }
+
+      .cert-label {
+        padding: 14px 4px 4px;
+        font-size: 0.9rem;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <a class="top-link" href="Index.html">← Back to home</a>
+      <h1>Certifications & Awards</h1>
+      <p class="intro">Recognition from learning and practice that reflects my commitment to technical growth, professionalism, and continuous skill development.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="gallery-grid" aria-label="Certification images">
+      <div class="gallery-item">
+        <img src="assets/Certifications/css1.png" alt="Academic Award certificate" />
+        <div class="cert-label">Academic Award and Best in Computer System Services NCII TESDA. This certificate recognizes my excellence and outstanding performance in the Computer System Services NCII program.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/Certifications/css2.png" alt="Certificate of Training" />
+        <div class="cert-label">Certificate of Training for completing 320 hours in Computer System Services NCII TESDA. This reflects the hands-on training and technical skills I gained throughout the program.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/Certifications/Exellence.png" alt="Academic Excellence award" />
+        <div class="cert-label">Academic Excellence award received during graduation on September 15, 2026, as Cum Laude. This honor reflects my dedication, hard work, and strong academic performance.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/Certifications/ncII.png" alt="NCII certificate" />
+        <div class="cert-label">NCII Certificate for Computer System Services NCII. This certifies my competency and readiness to perform the skills required in the Computer System Services field.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/Certifications/ojtcert.png" alt="OJT certificate" />
+        <div class="cert-label">OJT Certificate for completing 500 hours of on-the-job training. This demonstrates my practical experience, professionalism, and ability to apply technical knowledge in real work settings.</div>
+      </div>
+    </section>
+  </main>
+  <script>
+    (function(){
+      const imgs = Array.from(document.querySelectorAll('.gallery-item img'));
+      imgs.forEach((img,i) => {
+        img.classList.add('animate-on-scroll');
+        img.style.transitionDelay = (i * 90) + 'ms';
+      });
+
+      const labels = Array.from(document.querySelectorAll('.cert-label'));
+      labels.forEach((lbl,i) => {
+        lbl.classList.add('animate-on-scroll','translate-x');
+        lbl.style.transitionDelay = (i * 120 + 120) + 'ms';
+      });
+
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(entry => {
+          const el = entry.target;
+          if (entry.isIntersecting) {
+            el.classList.remove('out');
+            el.classList.add('in');
+          } else {
+            el.classList.remove('in');
+            el.classList.add('out');
+          }
+        });
+      }, { threshold: 0.15 });
+
+      imgs.concat(labels).forEach(el => io.observe(el));
+    })();
+  </script>
+</body>
+</html>
