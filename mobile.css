@@ -1,0 +1,117 @@
+/* Compact phone layouts shared by the portfolio pages. */
+@media (max-width: 720px) {
+  html { font-size: 14px; scroll-padding-top: 116px; }
+  body { background-attachment: scroll; overflow-wrap: break-word; }
+  .container { width: calc(100% - 24px); }
+  .container *, .hero-grid > *, .contact-wrap > * { min-width: 0; }
+  img, video, iframe, audio { max-width: 100%; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  .top-link, .back-link, .button, .cta-button, .media-actions a,
+  .nav-links a, .capstone-view-all { min-height: 44px; }
+  .top-link, .back-link, .nav-links a { display: inline-flex; align-items: center; }
+  .page-header { padding: 22px 0 10px; }
+  .page-header h1 { font-size: clamp(1.8rem, 7vw, 2.3rem); line-height: 1.15; }
+  .page-header p { font-size: 1rem; line-height: 1.55; }
+  section { scroll-margin-top: 116px; }
+
+  /* Home: smaller portraits, cards and headings, with usable navigation. */
+  .nav { padding: 6px 8px; gap: 4px; }
+  .brand { font-size: 1rem; }
+  .brand-mark { width: 28px; height: 28px; flex-basis: 28px; }
+  .nav-right { flex-wrap: wrap; gap: 4px; }
+  .nav-links { width: auto; flex: 1 1 auto; justify-content: flex-start; gap: 2px; }
+  .nav-links a { font-size: 0.9rem; padding: 4px 7px; }
+  .nav-actions .button { font-size: 0.9rem; padding: 6px 10px; }
+  .welcome-shell { min-height: 230px; padding: 24px 8px; }
+  .welcome-title { font-size: clamp(1.9rem, 7.5vw, 2.7rem); line-height: 1.1; }
+  .welcome-subtitle { font-size: 1rem; }
+  .hero { padding: 18px 0; }
+  .hero-grid, .about-grid, .contact-wrap, .projects-grid, .skill-grid {
+    grid-template-columns: minmax(0, 1fr); gap: 14px;
+  }
+  .intro-line { font-size: clamp(1.6rem, 6vw, 2rem); }
+  .name-line { font-size: clamp(2rem, 8vw, 2.7rem); line-height: 1.08; }
+  .hero-role, .hero-tagline { font-size: 1.1rem; }
+  .lead { font-size: 1rem; margin-bottom: 14px; }
+  .hero-actions { gap: 8px; flex-wrap: wrap; }
+  .hero-actions .button { flex: 1 1 125px; font-size: 0.95rem; padding: 8px 10px; }
+  .hero-card { width: min(100%, 300px); }
+  .profile-visual { height: clamp(230px, 70vw, 310px); border-radius: 16px; }
+  .profile-photo { object-fit: contain; border-radius: 16px; }
+  section { padding: 22px 0; }
+  .section-head { gap: 6px; margin-bottom: 14px; }
+  .section-head h2, .skill-panel h2, .about-profile h2, .contact-card h2 {
+    font-size: clamp(1.5rem, 6vw, 1.9rem); line-height: 1.2;
+  }
+  .about-panel, .contact-card, .skill-panel, .feature-card, .cta-box {
+    padding: 14px; border-radius: 16px;
+  }
+  .about-panel p, .skill-panel p, .skill-panel li, .feature-card p,
+  .project-body p, .cta-inner p { font-size: 1rem; line-height: 1.6; }
+  .about-profile, .skill-panel-inner { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .about-portrait { width: min(100%, 170px); }
+  .info-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .info-item { padding: 10px; }
+  .tool-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .tool-item { min-height: 80px; padding: 10px 4px; gap: 6px; }
+  .tool-item img { width: 36px; height: 36px; }
+  .tool-item span { font-size: 0.85rem; line-height: 1.3; overflow-wrap: anywhere; }
+  .project-thumb { height: 150px; }
+  .project-body { padding: 12px; }
+  .project-body h3 { font-size: 1.25rem; }
+  .contact-item { gap: 10px; padding: 10px; }
+  .contact-item span { font-size: 0.95rem; }
+  .cta-inner h3 { font-size: 1.8rem; }
+  .cta-button { width: auto; min-width: 0; padding: 10px 20px; font-size: 1rem; }
+  .footer-inner { gap: 8px; font-size: 0.9rem; }
+
+  /* Projects: fit media controls, category buttons, and galleries to the screen. */
+  .cards-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; padding: 10px 0 28px; }
+  .card-body { padding: 14px; }
+  .card-body h2, .card-body h3 { font-size: 1.4rem; }
+  .card-body p, .card-body li, .capstone-summary p { font-size: 1rem; line-height: 1.55; }
+  .project-card-image { height: auto; max-height: 190px; object-fit: contain; }
+  .project-view { padding: 10px 0 28px; }
+  .project-panel-header h2 { font-size: 1.8rem; }
+  .capstone-summary { padding: 14px; }
+  .capstone-gallery, .detail-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .capstone-figure { margin: 0; }
+  .capstone-figure img { height: auto; max-height: 300px; object-fit: contain; }
+  .capstone-figure figcaption { padding: 10px 12px; font-size: 0.95rem; }
+  .capstone-extra-gallery { padding: 12px; margin-top: 14px; }
+  .capstone-extra-header { flex-wrap: wrap; gap: 8px; }
+  .capstone-photo-link { flex-basis: 100px; }
+  .capstone-photo-list.is-expanded { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); }
+  .media-menu .detail-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .media-menu .detail-card { min-height: 76px; padding: 8px 4px; }
+  .media-menu .detail-card h3 { font-size: 0.95rem; overflow-wrap: anywhere; }
+  .media-menu .mini-chip { padding: 3px 5px; font-size: 0.65rem; letter-spacing: 0; margin-bottom: 6px; }
+  .media-content { margin-top: 14px; }
+  .media-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .media-item { min-height: 0; border-radius: 12px; }
+  .media-preview { aspect-ratio: 4 / 3; }
+  .media-preview img, .media-preview video { object-fit: contain; }
+  .media-item:has(video), .media-item:has(audio) { grid-column: 1 / -1; }
+  .media-item:has(video) .media-preview { aspect-ratio: 16 / 9; }
+  .media-meta { padding: 8px; font-size: 0.9rem; }
+  .media-actions { flex-wrap: wrap; gap: 4px; }
+  .media-actions a { padding: 6px 8px; font-size: 0.85rem; }
+  .pdf-viewer { min-height: 0; margin-top: 12px; }
+  .pdf-viewer iframe { height: 60svh; min-height: 280px; }
+
+  /* Certifications retain the complete image at a comfortable phone size. */
+  .gallery-grid { gap: 12px; padding: 10px 0 28px; }
+  .gallery-item { padding: 8px; border-radius: 14px; }
+  .gallery-item img { height: auto; max-height: 60svh; object-fit: contain; }
+  .cert-label { padding: 10px 4px 4px; font-size: 1rem; line-height: 1.5; }
+}
+
+@media (max-width: 359px) {
+  .container { width: calc(100% - 20px); }
+  .nav-right { justify-content: flex-start; }
+  .nav-links a { padding-inline: 5px; }
+  .nav-actions .button { padding-inline: 7px; }
+  .info-list { grid-template-columns: minmax(0, 1fr); }
+  .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .media-grid { grid-template-columns: minmax(0, 1fr); }
+}
