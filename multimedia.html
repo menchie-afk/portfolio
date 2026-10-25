@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multimedia Projects | Menchie Villanueva</title>
+  <link rel="stylesheet" href="project-details.css" />
+  <link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <a class="top-link" href="index.html#projects">← Back to home</a>
+      <h1>Multimedia Projects</h1>
+    </div>
+  </header>
+  <main class="container">
+    <section class="project-view is-visible" aria-label="Multimedia Projects details">
+      <div class="project-panel active" data-project="multimedia">
+
+        <div class="multimedia-layout">
+          <div class="media-menu">
+            <div class="detail-grid">
+              <button type="button" class="detail-card media-card is-active" data-category="animations">
+                <div class="mini-chip">Animations</div>
+              </button>
+
+              <button type="button" class="detail-card media-card" data-category="photography">
+                <div class="mini-chip">Photography</div>
+              </button>
+
+              <button type="button" class="detail-card media-card" data-category="photo_editing">
+                <div class="mini-chip">Photo Editing</div>
+              </button>
+            </div>
+          </div>
+
+          <div class="media-content">
+            <div id="mediaGallery" class="media-gallery" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="supabase-media.js"></script>
+  <script src="multimedia-gallery.js"></script>
+</body>
+</html>
