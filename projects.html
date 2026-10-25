@@ -1208,6 +1208,15 @@
 
     mediaGallery.classList.remove('is-visible');
     mediaGallery.innerHTML = '';
+
+    function openLinkedProject() {
+      const projectName = window.location.hash.slice(1);
+      if (projectName === 'capstone' || projectName === 'multimedia') {
+        showProject(projectName);
+      }
+    }
+    window.addEventListener('hashchange', openLinkedProject);
+    openLinkedProject();
   </script>
 </body>
 </html>
