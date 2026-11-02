@@ -1437,6 +1437,29 @@
 
     /* Stagger helper — apply with inline style from JS via transition-delay */
   </style>
+
+<style id="menchie-modern-redesign">
+:root{--bg:#f6f5ef;--bg-soft:#eeeee5;--panel:#fffefa;--panel-strong:#fff;--card:#fffefa;--card-2:#e9eee5;--text:#202a24;--muted:#69766d;--line:rgba(39,62,47,.13);--primary:#6f8b72;--secondary:#a7b99e;--accent:#d7b987;--success:#5f8066;--shadow:0 18px 48px rgba(39,62,47,.09);--radius:22px;--max-width:1160px}
+html{scroll-behavior:smooth} body{background:var(--bg)!important;color:var(--text)!important;font-family:Inter,"Segoe UI",sans-serif!important}
+.site-header,.nav{background:rgba(250,250,245,.88)!important;border-color:var(--line)!important;box-shadow:0 8px 28px rgba(36,54,40,.06)!important}
+.nav-links a,.nav-links{color:var(--muted)!important}.nav-links a:hover{background:#e9eee5!important;color:var(--text)!important}
+h1,h2,h3,.section-head h2{color:var(--text)} .section-tag,.top-link{color:var(--primary)!important}
+p,.muted,.lead,.intro{color:var(--muted)!important}
+.button.primary,.cta-button{background:var(--primary)!important;color:white!important;box-shadow:0 10px 24px rgba(91,122,96,.18)!important}
+.button.secondary,.socials a{background:#fffefa!important;color:var(--text)!important;border:1px solid var(--line)!important;box-shadow:none!important}
+.welcome-shell{min-height:430px!important}.welcome-title{color:var(--text)!important;text-shadow:none!important}.welcome-title .highlight,.name-line{background:linear-gradient(120deg,#55765e,#91a98c)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;text-shadow:none!important}
+.welcome-subtitle{color:var(--muted)!important;text-shadow:none!important}.welcome-subtitle:after{background:var(--primary)!important}
+.eyebrow{background:#e9eee5!important;border-color:#d9e2d5!important;color:#55765e!important}
+.about-panel,.feature-card,.project-card,.contact-card,.about-side,.skill-panel,.tool-item,.gallery-item,.project-panel,.capstone-summary,.capstone-extra-gallery,.empty-state{background:var(--panel)!important;border:1px solid var(--line)!important;box-shadow:var(--shadow)!important;color:var(--text)!important}
+.about-side-card,.about-side-card,.project-card,.tool-item{background:#fffefa!important;border-color:var(--line)!important}
+.profile-visual{border-radius:28px!important;overflow:hidden!important}.profile-photo{border-radius:28px!important}
+.project-card,.gallery-item,.tool-item,.about-panel,.contact-card{transition:transform .25s ease,box-shadow .25s ease}.project-card:hover,.gallery-item:hover{transform:translateY(-5px);box-shadow:0 22px 48px rgba(39,62,47,.13)!important}
+.project-thumb,.project-card-image,.media-preview{border-radius:16px!important}
+.chip,.mini-chip,.section-tag{letter-spacing:.1em}
+.site-footer{border-color:var(--line)!important;color:var(--muted)!important}
+@media(max-width:760px){.hero-grid,.about-grid,.skill-panel-inner{grid-template-columns:1fr!important}.profile-visual{height:min(110vw,520px)!important}.welcome-shell{min-height:300px!important;padding:24px 12px!important}.nav{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
 </head>
 <body>
   <header class="site-header">
@@ -1677,6 +1700,7 @@
       </div> 
     </div> 
  
+    <div class="work-category-label" style="display:flex;align-items:center;gap:10px;margin:8px 0 18px;color:#55765e;font-size:.78rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase"><span style="display:inline-block;width:28px;height:1px;background:#91a98c"></span>Web Development</div>
     <div class="projects-grid" id="projects"> 
       <article class="project-card"> 
         <div class="project-thumb" aria-hidden="true"></div> 
